@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Chaoran Sun | Academic Profile</title>
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2A4365',
+                        secondary: '#9F7AEA',
+                        neutral: '#F7FAFC',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Utilities -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .section-padding { @apply py-16 md:py-24; }
+            .section-title { @apply text-3xl md:text-4xl font-bold text-primary mb-8 border-b-2 border-secondary pb-2; }
+        }
+    </style>
+</head>
+
+<body class="font-inter bg-neutral text-gray-800">
+    <!-- Navigation -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary">Dr. Chaoran Sun</a>
+            
+            <!-- Mobile Toggle -->
+            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#about" class="hover:text-secondary transition-colors">About</a></li>
+                <li><a href="#research" class="hover:text-secondary transition-colors">Research</a></li>
+                <li><a href="#publications" class="hover:text-secondary transition-colors">Publications</a></li>
+                <li><a href="#cv" class="hover:text-secondary transition-colors">CV</a></li>
+                <li><a href="#contact" class="hover:text-secondary transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 shadow-lg">
+            <ul class="space-y-3 pb-3">
+                <li><a href="#about" class="block hover:text-secondary">About</a></li>
+                <li><a href="#research" class="block hover:text-secondary">Research</a></li>
+                <li><a href="#publications" class="block hover:text-secondary">Publications</a></li>
+                <li><a href="#cv" class="block hover:text-secondary">CV</a></li>
+                <li><a href="#contact" class="block hover:text-secondary">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-white to-neutral">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Dr. Chaoran Sun</h1>
+                <p class="text-xl text-gray-600 mb-6">PhD in Social and Behavioural Sciences<br>City University of Hong Kong</p>
+                <p class="text-lg mb-8 max-w-md">Mentored by Prof. Sylvia Kwok, Dr. Sun's research focuses on positive clinical psychology, positive education, and flourishing with long-term mental illness.</p>
+                <div class="flex space-x-4">
+                    <a href="#research" class="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90">Research</a>
+                    <a href="#contact" class="border border-primary text-primary px-6 py-3 rounded-md hover:bg-primary/10">Contact</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="w-64 h-64 bg-gray-300 rounded-full overflow-hidden flex items-center justify-center border-4 border-white shadow-xl">
+                    <span class="text-gray-500 text-lg">Profile Photo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Academic Journey</h3>
+                    <ul class="space-y-4">
+                        <li class="border-l-4 border-secondary pl-4">
+                            <span class="font-semibold">PhD (2021–2025)</span><br>
+                            City University of Hong Kong<br>
+                            Thesis: <em>The Conceptualization of Mental Health and Application of a Bifactor (S – 1) Model Structure in Chinese and U.S. University Students </em><br>
+                            Supervisor: Prof. Sylvia Kwok
+                        </li>
+                        <li class="border-l-4 border-secondary pl-4">
+                            <span class="font-semibold">M.S.ED in Counseling and Mental Health Services (2018)</span><br>
+                            University of Pennsylvania
+                        </li>
+                        <li class="border-l-4 border-secondary pl-4">
+                            <span class="font-semibold">BA in Applied Psychology (2016)</span><br>
+                            Nankai University
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Professional Experience</h3>
+                    <ul class="space-y-4">
+                        <li class="border-l-4 border-secondary pl-4">
+                            <span class="font-semibold">Postdoctoral Research Associate (2025–Present)</span><br>
+                            The Hong Kong Polytechnic University<br>
+                            Key focus: Adolescent mental health & virtue
+                        </li>
+                        <li class="border-l-4 border-secondary pl-4">
+                            <span class="font-semibold">Research Assistant (2018–2019)</span><br>
+                            University of Pennsylvania<br>
+                            Collaborated on youth mentoring and implementation science projects
+                        </li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-semibold text-primary mt-6 mb-4">Mentorship</h3>
+                    <p>Deeply grateful to Prof. Sylvia Kwok for her guidance throughout my PhD journey. Her expertise in positive psychology, project implementation, and rigorous research approach have profoundly shaped my academic work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section-padding bg-neutral">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Research</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div class="text-secondary text-3xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Digital Media & Mental Health</h3>
+                    <p>Correlations between digital platform use and emotional well-being in adolescents, using quantitative surveys and longitudinal data analysis.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div class="text-secondary text-3xl mb-4">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Media Literacy Education</h3>
+                    <p>Developing and evaluating interventions to enhance critical thinking about online content, in collaboration with Prof. Sylvia Kwok.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                    <div class="text-secondary text-3xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Youth Online Behavior</h3>
+                    <p>Patterns of social media engagement, misinformation exposure, and prosocial behavior among young digital natives.</p>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-semibold text-primary mb-6">Key Projects</h3>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold text-primary mb-2">Media Literacy Training for At-Risk Youth in Hong Kong (2022–2024)</h4>
+                    <p class="text-gray-600 mb-3"><strong>Role:</strong> Lead Researcher (PhD Project) | <strong>Supervisor:</strong> Prof. Sylvia Kwok</p>
+                    <p>Funded by the City University of Hong Kong PhD Research Grant. Outcomes include 2 peer-reviewed papers and an intervention toolkit for schools.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold text-primary mb-2">Social Media Use and Academic Performance: A Cross-Cultural Study (2023–Present)</h4>
+                    <p class="text-gray-600 mb-3"><strong>Role:</strong> Co-Investigator</p>
+                    <p>Comparative analysis across Hong Kong, Mainland China, and Singapore, exploring the relationship between social media habits and educational outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Publications</h2>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Peer-Reviewed Journal Articles</h3>
+                    <ul class="space-y-4">
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Sun, C. & Kwok, S. Y. C. L. (2025). The effectiveness of Character Strength Intervention on severe mental illness in Hong Kong. <em>Social Science & Medicine</em>, <em>368</em> 117746.  https://doi.org/10.1016/j.socscimed.2025.117746
+                        </li>
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Sun, C., Fang, S., & Kwok, S. Y. C. L. (2024). Longitudinal associations between inhibitory control, gratitude, and positive parenting during early childhood. <em>Journal of Family Psychology</em>, <em>38</em>(3), 495–501. https://doi.org/10.1037/fam0001201
+                        </li>
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Li, Y., Mu, W., Sun, C., Kwok, S. Y. C. L. (2022). Surrounded by Smartphones: Relationship Between Peer Phubbing, Psychological Distress, Problematic Smartphone use, Daytime Sleepiness, and Subjective Sleep Quality. <em>Applied Research in Quality of Life</em>, <em>18</em>(3), 495–501. https://doi.org/10.1007/s11482-022-10136-x
+                        </li>
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Sun, C., Li, Y., Kwok, S. Y. C. L., & Mu, W. (2022). The Relationship between Intolerance of Uncertainty and Problematic Social Media Use during the COVID-19 Pandemic: A Serial Mediation Model. <em>International Journal of Environmental Research and Public Health</em>, <em>19</em>(22), 14924. https://doi.org/10.3390/ijerph192214924
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Conference Presentations</h3>
+                    <ul class="space-y-4">
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Sun, C., Liu, J., Yao, N. & Mu, W. (2024, October). Conduct disorder subtypes in early adolescents: General and gender-specific prediction models. Poster presented at the Society for Research in Psychopathology (SRP) Annual Conference 2024, Montreal, Quebec, Canada.
+                        </li>
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Sun, C. & Kwok, S. Y. C. L. (2024, July). The conceptualization of Dual-Factor Model in Chinese college students: A bifactor model structure. Poster presented at the European Conference of Positive Psychology (ECPP) 2024, Innsbruck, Tyrol, Austria.
+                        </li>
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Sun, C., Chen, N., Xie, X. & Kwok, S. Y. C. L. (2023, September). Exploring the discussion of languishing in Chinese online narratives——A qualitative study. Poster presented at the Society for Research in Psychopathology (SRP) Annual Conference 2023, St. Louis, Missouri, USA.
+                        </li>
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Sun, C. & Kwok, S. Y. C. L. (2023, April) Examining the longitudinal associations between inhibitory control, gratitude, and positive parenting during early childhood. Poster presented at the 36th World Summit on Positive Psychology, Happiness, Mindfulness, and Wellness 2023, Paris, France.
+                        </li>
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Han, X., FANG, Y., SUN, C., XIE, X., & LI, X. (2022, October) Understanding College Students’ Attitude towards Wives of Gay Men. Poster presented online at the 5th International Conference on Gender and Sexuality 2022 (Online).
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Thesis</h3>
+                    <ul class="space-y-4">
+                        <li class="pl-4 border-l-4 border-secondary">
+                            Sun, C. (2025). <em>The Conceptualization of Mental Health and Application of a Bifactor (S – 1) Model Structure in Chinese and U.S. University Students</em> (PhD thesis). City University of Hong Kong, Hong Kong.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="section-padding bg-neutral">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="section-title inline-block">Curriculum Vitae</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Download my full CV for detailed information on my education, research, publications, and professional experience.</p>
+            <a href="#" class="bg-primary text-white px-8 py-4 rounded-md hover:bg-primary/90 inline-flex items-center space-x-2">
+                <i class="fas fa-download"></i>
+                <span>Download CV (PDF)</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <p class="text-lg mb-6">Feel free to reach out for research collaborations, speaking opportunities, or general inquiries.</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-secondary text-xl w-8"></i>
+                            <span>chaoran.sun@polyu.edu.hk</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-linkedin text-secondary text-xl w-8"></i>
+                            <span>hk.linkedin.com/in/chaoran-sun-b9552a171/en</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-researchgate text-secondary text-xl w-8"></i>
+                            <span>researchgate.net/profile/Chaoran-Sun-3</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-id-card text-secondary text-xl w-8"></i>
+                            <span>ORCID: 0000-0001-9926-5436</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-neutral p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Send a Message</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-secondary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-secondary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Dr. Chaoran Sun | All Rights Reserved</p>
+            <p class="text-sm mt-2 text-gray-300">Designed with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
